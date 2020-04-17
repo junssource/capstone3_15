@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link href="common.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+			<header>
+				<div id="title">
+					생활 계산기
+				</div>
+				<div id="sub-title">
+					소비한 시간과 돈을 계산합니다.<br>
+				</div>
+			</header>
+			<div id="form">
+				<div id="btn-group">
+					<button id="day-btn">일</button>
+					<button id="week-btn">주</button>
+					<button id="month-btn">개월</button>
+					<button id="year-btn">년</button>
+				</div>
+				<div id="display-form">
+					<form name="form1" method="post" action="page2.php">
+						
+						<input type="text" id="term" name="term" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+						<span id="term-class">일</span><br>
+						
+						<input type="text" id="type" name="type" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+						<span>유형</span><br>
+						
+						<input type="text" id="time" name="time" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+						<span>시간</span><br>
+						
+						<input type="text" id="money" name="money" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+						<span>원</span><br>
+						<input type="hidden" name="term_name" value="" id="hidden">
+						<div id="input" onclick="check_input()">입력</div>
+					</form>
+				</div>
+			</div>
+		<footer>
+			캡스톤디자인3 15조
+		</footer>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
