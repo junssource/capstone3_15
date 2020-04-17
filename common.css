@@ -1,0 +1,29 @@
+/* 사이트에서 공통으로 적용되는 태그 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body{font-family:'Nanum Gothic', sans-serif;}
+#container{
+	width:70vw;
+	margin:0 auto;
+}
+#title{
+	font-size:1em;
+	font-weight:600;
+	border-bottom:1px solid #eee;
+}
+#sub-title{
+	padding-top:8px;
+	padding-bottom:6px;
+	font-size:0.7em;
+}
+
+footer{
+	padding-top:6px;
+	font-size:0.7em;
+	width:70vw;
+}
+
+
+
+
